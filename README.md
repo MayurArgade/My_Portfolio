@@ -1,16 +1,47 @@
-<<<<<<< HEAD
-# my-portfolio
-=======
-# React + Vite
+# Mayur Argade | Freelance Web Developer
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A client-focused freelance web development portfolio built with React and Vite.
 
-Currently, two official plugins are available:
+## Services
+- Starter Business Website — starting at ₹8,000
+- Professional Business Website — starting at ₹12,000
+- Full-Stack MERN Web Application — starting at ₹25,000
+- Website Maintenance & Support — starting at ₹1,500/month
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Final pricing depends on project scope and complexity. Domain registration, paid hosting, premium APIs and third-party subscriptions are billed separately.
 
-## Expanding the ESLint configuration
+## Tech stack
+React, JavaScript, CSS, Vite and EmailJS.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
->>>>>>> f3c39ad (Initial portfolio commit)
+## Run locally
+```bash
+npm install
+npm run dev
+```
+
+## Build and lint
+```bash
+npm run build
+npm run lint
+```
+
+## Contact form configuration
+The contact form uses EmailJS. Add these environment variables to a local `.env` file and to your hosting provider's environment settings:
+
+```env
+VITE_EMAILJS_SERVICE_ID=your_service_id
+VITE_EMAILJS_TEMPLATE_ID=your_template_id
+VITE_EMAILJS_PUBLIC_KEY=your_public_key
+```
+
+Configure the EmailJS template with these fields: `name`, `email`, `phone`, `business`, `service`, `budget`, and `message`.
+
+The form reports an unconfigured state until these values are supplied. It does not claim to send enquiries without a configured service.
+
+## Selected work
+- [My Watch Mood](https://react-netlix.netlify.app/) · [Source](https://github.com/MayurArgade/react-netflix-clone)
+- [Wallpaper Gallery](https://wallpaper-app-dun.vercel.app/) · [Source](https://github.com/MayurArgade/wallpaper-app)
+- [Gemini UI Clone](https://mayurargade.github.io/Geminiclone/) · [Source](https://github.com/MayurArgade/Geminiclone)
+
+## Deployment
+Deploy as a Vite static site. Set the EmailJS environment variables in the deployment dashboard before enabling the contact form.
